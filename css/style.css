@@ -1,0 +1,183 @@
+:root {
+  --blue: #3ea1db;
+  --blue-dark: #574ae8;
+  --white: #fff;
+  --title: #313131;
+  --text: #b6b6b6;
+  --background: #f3f5f7;
+  --linear: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url(../assets//fonts/LexendDeca-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../assets//fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../assets//fonts/Inter-Medium.ttf);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+* body {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  scroll-behavior: smooth;
+  background: var(--background);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+  width: 100%;
+  height: 250px;
+  background: var(--linear);
+}
+.container .container_nav {
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  padding: 2.563rem 1.25rem 0 1.25rem;
+}
+.container .container_nav nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 4.563rem;
+}
+.container .container_nav nav a {
+  font-size: 1.5rem;
+  font-family: "Lexend Deca";
+  font-weight: 500;
+  color: var(--white);
+  line-height: 1.875rem;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.container .container_nav nav a:hover {
+  color: blueviolet;
+  transition-timing-function: linear;
+}
+.container .container_nav .container_input {
+  width: 100%;
+  position: relative;
+}
+.container .container_nav .container_input button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20%;
+  padding-left: 1.063rem;
+}
+.container .container_nav .container_input input {
+  max-width: 900px;
+  width: 100%;
+  height: 65px;
+  font-size: 1.125rem;
+  font-family: "Inter";
+  font-weight: 500;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  padding-left: 4rem;
+}
+.container .container_nav .container_input input::placeholder {
+  color: var(--white);
+}
+
+.container_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_content .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: var(--background_2);
+  max-width: 900px;
+  height: auto;
+  padding: 0 1.25rem;
+}
+.container_content .content section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  background: var(--white);
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  border-radius: 5px;
+  margin-top: 6.25rem;
+  padding: 1.25rem 1.563rem 1.563rem 1.563rem;
+}
+.container_content .content section:nth-child(2),
+.container_content .content section:nth-child(3),
+.container_content .content section:nth-child(4),
+.container_content .content section:nth-child(5) {
+  padding: 0;
+  padding: 1.25rem 1.563rem 1.563rem 1.563rem;
+}
+.container_content .content section:nth-child(6) {
+  padding: 0;
+  padding: 1.25rem 1.563rem 1.563rem 1.563rem;
+  margin-bottom: 6.25rem;
+}
+.container_content .content section .top {
+  display: flex;
+  justify-content: space-between;
+  max-width: 850px;
+  width: 100%;
+}
+.container_content .content section .top p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.25rem;
+}
+.container_content .content section .top svg {
+  fill: var(--blue);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.container_content .content section .top svg:hover {
+  fill: var(--blue-dark);
+  transition-timing-function: linear;
+}
+.container_content .content section .texts {
+  display: flex;
+  flex-direction: column;
+  max-width: 851px;
+  width: 100%;
+}
+.container_content .content section .texts h1 {
+  max-width: 507px;
+  width: 100%;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+  color: --title;
+}
+.container_content .content section .texts span {
+  max-width: 850px;
+  width: 100%;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 2rem;
+}
