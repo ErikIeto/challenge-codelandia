@@ -1,6 +1,6 @@
 <div align="center">
 <h1 style="color:#000">Challenge</h1>
-<img alt="photo" src="assets/images/rocket_startup_monitor_screen_computer_icon_124621.svg" width="25%">
+<img alt="photo" src="assets/images/rocket_startup_monitor_screen_computer_icon_124621.svg" width="30%">
 </div>
 
 <p align="center">
