@@ -18,7 +18,7 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [HTML5](https://www.w3schools.com/html/)
 - [CSS3](https://www.w3schools.com/css/)
 - [Sass](https://sass-lang.com/)
-- [Java Script (scrollreveal)](https://www.javascript.com)
+- [Javascript (scrollreveal)](https://www.javascript.com)
 
 ## Projeto
 
